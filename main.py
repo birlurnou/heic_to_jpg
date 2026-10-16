@@ -86,7 +86,7 @@ def main() -> None:
         return
 
     # 3. ZIP в Загрузки
-    timestamp = datetime.now().strftime(''%Y%m%d_%H%M%S'')
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     output_zip = get_downloads_dir() / f'heic_to_jpg_{timestamp}.zip'
     make_zip(jpg_files, output_zip)
 
